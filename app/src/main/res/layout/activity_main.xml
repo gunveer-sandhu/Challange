@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+
+        android:layout_toRightOf="@id/imageView"
+        android:text="Pick Image" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:hint="Email@email.com"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+         />
+
+    <EditText
+        android:id="@+id/txtConfirmPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtConfirmPassword"
+        android:layout_marginLeft="75dp"
+        android:padding="10dp"
+        android:text="Gender:"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Female"/>
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Other"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginLeft="75dp"
+        android:padding="10dp"
+        android:text="Country:"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_toRightOf="@id/country"
+        android:padding="10dp"/>
+    <CheckBox
+        android:id="@+id/iAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/txtName"
+        android:layout_alignRight="@id/txtName"
+        android:text="I agree to all the terms and conditions i.e being kind and happy."/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/register"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iAgree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Register"/>
+
+</RelativeLayout>

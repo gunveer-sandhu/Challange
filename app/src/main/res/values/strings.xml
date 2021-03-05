@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Challanger</string>
+    <string-array name="Countries">
+        <item>India</item>
+        <item>Uzbekistan</item>
+        <item>Greenland</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+    </string-array>
+</resources>
